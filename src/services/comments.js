@@ -11,7 +11,7 @@ export function getCommentById(id) {
 
 export function getCommentsByPostId(postId) {
   //get comments by post id
-  return comments.find((c) => c.postId === postId)
+  return comments.filter((c) => c.postId === postId)
 }
 
 export function updateCommentBody(id, body) {
